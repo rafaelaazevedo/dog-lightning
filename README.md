@@ -5,7 +5,7 @@ A simple project with the configuration to run automation with cucumber, maven a
 
 **Run the automation on Eclipse**
 
-- Right click on your project's folder > Rua As... > Run configurations... > Maven build
+- Right click on your project's folder > Run As... > Run configurations... > Maven build
 - Add Goals: test -Dcucumber.options="--tags @smoke"
 - Run !
 
