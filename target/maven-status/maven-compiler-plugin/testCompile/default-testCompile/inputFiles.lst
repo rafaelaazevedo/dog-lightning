@@ -1,2 +1,4 @@
-/Users/rafaelasouza/Desktop/Rafaela/Trabalhos/Git/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/steps/LoginSteps.java
-/Users/rafaelasouza/Desktop/Rafaela/Trabalhos/Git/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/runner/RunnerTest.java
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/pages/LoginPage.java
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/BasePage.java
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/RunnerTest.java
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/steps/LoginSteps.java

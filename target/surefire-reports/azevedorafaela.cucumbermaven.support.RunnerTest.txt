@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: azevedorafaela.cucumbermaven.support.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 0.81 sec <<< FAILURE!
+Given I have opened the browser(Scenario: Login)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException
+	at azevedorafaela.cucumbermaven.pages.LoginPage.getLoginUrl(LoginPage.java:26)
+	at azevedorafaela.cucumbermaven.steps.LoginSteps.I_have_opened_the_browser(LoginSteps.java:12)
+	at ✽.Given I have opened the browser(features/login.feature:5)
+
+Scenario: Login  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException
+	at azevedorafaela.cucumbermaven.pages.LoginPage.getLoginUrl(LoginPage.java:26)
+	at azevedorafaela.cucumbermaven.steps.LoginSteps.I_have_opened_the_browser(LoginSteps.java:12)
+	at ✽.Given I have opened the browser(features/login.feature:5)
+
