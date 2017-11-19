@@ -2,42 +2,44 @@ package azevedorafaela.cucumbermaven.pages;
 
 import static org.junit.Assert.*;
 
-import java.net.URI;
+import org.openqa.selenium.WebElement;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+import azevedorafaela.cucumbermaven.support.BaseUtil;
+import azevedorafaela.cucumbermaven.support.Support;
 
-import azevedorafaela.cucumbermaven.support.BasePage;
+public class LoginPage extends BaseUtil {
+    BaseUtil base;
+    Support support = new Support(base);
 
-@ContextConfiguration(classes = { BasePage.class })
-public class LoginPage {
+    /*You can declare the elements of the page here (on top of the page)
+    or you can create a library to declare the key and value 
+    for the elements of each page*/
+ 
+    // ELEMENTS
+	WebElement userInput = support.findElementByName("log");
+	WebElement passInput = support.findElementByName("pwd");
+	WebElement submit = support.findElementByName("wp-submit");
 
-	@Autowired
-	protected ChromeDriver driver;
-
-	@Autowired
-	protected URI getBaseUrl;
-
-	@Autowired
-	protected String getPassword;
-
+    public LoginPage(BaseUtil base){
+        this.base=base;
+    }
+    
 	public void getLoginUrl() throws Throwable {
-		driver.get(getBaseUrl.toString());
+		support.loadBaseUrl();
 	}
 
 	public void login(String user) throws Throwable {
-		driver.findElementByName("log").click();
-		driver.findElementByName("log").sendKeys(user);
+		userInput.click();
+		userInput.sendKeys(base.getUser());
 
-		driver.findElementByName("pwd").click();
-		driver.findElementByName("pwd").sendKeys(getPassword);
+		passInput.click();
+		passInput.sendKeys(base.getPassword());
 
-		driver.findElementByName("wp-submit").click();
+		submit.click();
 	}
 
 	public void assertTitlePage(String title) throws Throwable {
-		assertEquals(driver.getTitle(), title);
+		assertEquals(base.getDriver().getTitle(), title);
 	}
 
 }

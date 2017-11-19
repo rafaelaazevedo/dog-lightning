@@ -1,4 +1,6 @@
-azevedorafaela/cucumbermaven/pages/LoginPage.class
+azevedorafaela/cucumbermaven/support/Hooks.class
 azevedorafaela/cucumbermaven/steps/LoginSteps.class
-azevedorafaela/cucumbermaven/support/BasePage.class
+azevedorafaela/cucumbermaven/pages/LoginPage.class
+azevedorafaela/cucumbermaven/support/BaseUtil.class
 azevedorafaela/cucumbermaven/support/RunnerTest.class
+azevedorafaela/cucumbermaven/support/Support.class

@@ -1,4 +1,6 @@
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/Hooks.java
 /Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/pages/LoginPage.java
-/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/BasePage.java
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/Support.java
+/Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/BaseUtil.java
 /Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/support/RunnerTest.java
 /Users/rsouza/Documents/cucumber-maven-selenium/src/test/java/azevedorafaela/cucumbermaven/steps/LoginSteps.java
