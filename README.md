@@ -10,6 +10,7 @@ A simple project with the configuration to run automation with cucumber, maven a
 - Run !
 
 <br>
+
 **Run the automation on CLI**
 
 - Open the terminal on your project's folder
@@ -17,6 +18,7 @@ A simple project with the configuration to run automation with cucumber, maven a
 mvn test -Dcucumber.options="--tags @smoke"
 
 <br>
+
 **Run the automation with Cucumber**
 
 - Install the Cucumber plugin for Eclipse
