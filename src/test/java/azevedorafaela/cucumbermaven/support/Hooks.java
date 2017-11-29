@@ -15,7 +15,7 @@ public class Hooks extends BaseUtil {
 
 	@Before
 	public void testInitializer() {
-			base.setDriver(new ChromeDriver());
+			base.setDriver(new ChromeDriver(ChromeDriverService.createDefaultService()));
 			base.setBaseURl("https://wordpress.com/");
 			base.setUser("user");
 			base.setPassword("password");
