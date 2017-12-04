@@ -1,20 +1,15 @@
 package azevedorafaela.cucumbermaven.support;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import com.google.inject.Inject;
 
-public class Support extends BaseUtil {
-	BaseUtil base;
 
-	public Support(BaseUtil base) {
-		this.base = base;
-	}
+public abstract class Support {
 
-	public WebElement findElementByName(String element) {
-		return base.getDriver().findElement(By.name(element));
+	@Inject
+	private DriverFactory driverFactory;
+
+	public void loadBaseUrl(String url) {
+		driverFactory.getDriver().get(url);
 	};
-	public void loadBaseUrl(){
-		base.getDriver().get(base.getBaseURl());
-	}
 
 }

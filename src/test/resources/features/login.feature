@@ -1,6 +1,6 @@
 Feature: Login
 
-  @smoke
+@smoke
   Scenario: Login
     Given I have opened the browser
     When I send my credentials "<user>"
