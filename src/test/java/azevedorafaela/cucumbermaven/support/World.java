@@ -6,6 +6,7 @@ import cucumber.runtime.java.guice.ScenarioScoped;
 
 @ScenarioScoped
 public class World {
-	public WebDriver driver;
-	public Support support;
+	public WebDriver driver = new DriverFactory().getManager();
+	public Support support = new Support();
+	public Wait wait = new Wait(driver);
 }
