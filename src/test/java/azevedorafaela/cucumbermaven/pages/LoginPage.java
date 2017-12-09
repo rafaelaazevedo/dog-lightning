@@ -3,21 +3,17 @@ package azevedorafaela.cucumbermaven.pages;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import com.google.inject.Inject;
 
 import azevedorafaela.cucumbermaven.support.World;
 
-public class LoginPage {
-
-	private World world;
+public class LoginPage  extends BasePage {
 	public String URL = "log-in?redirect_to=https%3A%2F%2Fwordpress.com%2F";
 
 	@Inject
 	public LoginPage(World world) {
-		this.world = world;
-		PageFactory.initElements(world.driver, this);
+		super(world);
 	}
 
 	@FindBy	(id = "usernameOrEmail") WebElement username;
@@ -28,7 +24,9 @@ public class LoginPage {
 		username.clear();
 		username.sendKeys(user);
 		submit.click();
-		world.support.waitElement(password);
+		
+		world.wait.waitElement(password);
+		
 		password.clear();
 		password.sendKeys(pass);
 		submit.click();

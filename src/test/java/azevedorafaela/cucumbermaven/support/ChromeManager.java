@@ -10,7 +10,13 @@ public class ChromeManager extends DriverManager {
 	
 	@Override
 	protected WebDriver createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+		String driverPath = "src/test/resources/drivers/chromedriver";
+		
+		if (System.getProperty("os.name").contains("Windows")){
+			driverPath += ".exe";
+		}
+		
+		System.setProperty("webdriver.chrome.driver", driverPath);
 		return driver = new ChromeDriver(ChromeDriverService.createDefaultService());	
 	}
 
