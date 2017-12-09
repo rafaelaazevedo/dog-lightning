@@ -14,11 +14,6 @@ import com.google.inject.Inject;
 import cucumber.runtime.Timeout;
 
 public class Support {
-	private WebDriver driver;
-	
-	public Support(WebDriver driver) {
-		this.driver = driver;
-	}
 
 	public String baseUrl;
 	public String user;
@@ -33,7 +28,5 @@ public class Support {
 		this.pass = prop.getProperty("password");
 	}
 	
-	public void waitElement(WebElement element) {
-		new WebDriverWait(driver, 5000).until(ExpectedConditions.elementToBeClickable(element));
-	}
+	
 }

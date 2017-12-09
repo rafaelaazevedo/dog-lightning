@@ -7,16 +7,21 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 public class ChromeManager extends DriverManager {
 
 	protected ChromeDriver driver;
-	
+
 	@Override
 	protected WebDriver createDriver() {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-		return driver = new ChromeDriver(ChromeDriverService.createDefaultService());	
+		String driverPath = "src/test/resources/drivers/chromedriver";
+		if (System.getProperty("os.name").contains("Windows")) {
+			driverPath += ".exe";
+		}
+
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		return driver = new ChromeDriver(ChromeDriverService.createDefaultService());
 	}
 
 	@Override
 	public WebDriver getDriver() {
-		if (driver == null){
+		if (driver == null) {
 			this.createDriver();
 		}
 		return driver;

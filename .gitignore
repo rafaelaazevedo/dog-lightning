@@ -3,4 +3,5 @@
 .settings/
 bin/
 maven-status/
+target/
 .DS_Store
