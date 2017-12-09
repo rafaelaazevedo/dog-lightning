@@ -1,4 +1,6 @@
 .project
 .classpath
 .settings/
+bin/
 maven-status/
+.DS_Store
