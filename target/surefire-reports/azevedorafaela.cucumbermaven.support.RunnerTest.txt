@@ -1,16 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: azevedorafaela.cucumbermaven.support.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 3.106 sec <<< FAILURE!
-Given I have opened the browser(Scenario: Login)  Time elapsed: 0.006 sec  <<< ERROR!
-java.lang.NullPointerException
-	at azevedorafaela.cucumbermaven.pages.LoginPage.navigate(LoginPage.java:35)
-	at azevedorafaela.cucumbermaven.steps.LoginStep.i_have_opened_the_browser(LoginStep.java:20)
-	at ✽.Given I have opened the browser(login.feature:5)
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.067 sec <<< FAILURE!
+Then I should see the "<Wordpress>" title of the page(Scenario: Login)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Log In — WordPress.com]> but was:<[<Wordpress>]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at azevedorafaela.cucumbermaven.pages.LoginPage.assertTitle(LoginPage.java:42)
+	at azevedorafaela.cucumbermaven.steps.LoginStep.i_should_see_the_title_of_the_page(LoginStep.java:31)
+	at ✽.Then I should see the "<Wordpress>" title of the page(login.feature:7)
 
-Scenario: Login  Time elapsed: 0.007 sec  <<< ERROR!
-java.lang.NullPointerException
-	at azevedorafaela.cucumbermaven.pages.LoginPage.navigate(LoginPage.java:35)
-	at azevedorafaela.cucumbermaven.steps.LoginStep.i_have_opened_the_browser(LoginStep.java:20)
-	at ✽.Given I have opened the browser(login.feature:5)
+Scenario: Login  Time elapsed: 0.004 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Log In — WordPress.com]> but was:<[<Wordpress>]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at azevedorafaela.cucumbermaven.pages.LoginPage.assertTitle(LoginPage.java:42)
+	at azevedorafaela.cucumbermaven.steps.LoginStep.i_should_see_the_title_of_the_page(LoginStep.java:31)
+	at ✽.Then I should see the "<Wordpress>" title of the page(login.feature:7)
 

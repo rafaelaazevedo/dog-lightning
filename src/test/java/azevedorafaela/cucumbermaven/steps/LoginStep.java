@@ -13,7 +13,8 @@ public class LoginStep {
 	@Inject
 	private World world;
 	
-	private LoginPage loginPage = new LoginPage(world);
+	@Inject
+	private LoginPage loginPage;
 
 	@Given("^I have opened the browser$")
 	public void i_have_opened_the_browser() throws Throwable {

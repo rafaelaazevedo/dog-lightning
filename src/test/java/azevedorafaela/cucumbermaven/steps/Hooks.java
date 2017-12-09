@@ -16,7 +16,7 @@ public class Hooks {
 	@Before
 	public void beforeScenario() throws IOException {
 		world.driver = new DriverFactory().getManager();
-		world.support = new Support();
+		world.support = new Support(world.driver);
 		world.support.getProperties();
 	}
 
