@@ -1,6 +1,9 @@
-azevedorafaela/cucumbermaven/steps/LoginSteps.class
-azevedorafaela/cucumbermaven/steps/World.class
+azevedorafaela/cucumbermaven/support/DriverManager.class
 azevedorafaela/cucumbermaven/support/DriverFactory.class
+azevedorafaela/cucumbermaven/steps/LoginStep.class
 azevedorafaela/cucumbermaven/pages/LoginPage.class
+azevedorafaela/cucumbermaven/steps/Hooks.class
+azevedorafaela/cucumbermaven/support/ChromeManager.class
 azevedorafaela/cucumbermaven/support/RunnerTest.class
 azevedorafaela/cucumbermaven/support/Support.class
+azevedorafaela/cucumbermaven/support/World.class

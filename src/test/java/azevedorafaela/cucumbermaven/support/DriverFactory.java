@@ -1,12 +1,9 @@
 package azevedorafaela.cucumbermaven.support;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
-
-	protected ChromeDriver getDriver() {
-		return new ChromeDriver(ChromeDriverService.createDefaultService());
+	public WebDriver getManager() {
+		return new ChromeManager().getDriver();
 	}
-
 }
