@@ -8,6 +8,7 @@ public class ChromeManager extends DriverManager {
 
 	protected ChromeDriver driver;
 
+	//If Windows gets the .exe chromedriver
 	@Override
 	protected WebDriver createDriver() {
 		String driverPath = "src/test/resources/drivers/chromedriver";

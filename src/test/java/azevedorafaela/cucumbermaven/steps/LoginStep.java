@@ -10,9 +10,11 @@ import cucumber.api.java.en.When;
 
 public class LoginStep {
 
+	// Here you need to inject the pages that you need to use
+	// Then you don't need to create new instance 
 	@Inject
 	private World world;
-	
+
 	@Inject
 	private LoginPage loginPage;
 
