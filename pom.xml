@@ -16,7 +16,8 @@
 		<junit.version>4.12</junit.version>
 		<cucumber.version>1.2.5</cucumber.version>
 		<selenium.version>3.7.1</selenium.version>
-		<maven.compiler.version>3.3</maven.compiler.version>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 
 	<dependencies>

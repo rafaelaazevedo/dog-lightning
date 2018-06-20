@@ -37,6 +37,7 @@ public class LoginPage extends BasePage {
 
 	// It is possible to use the driver already instantiate in the World.class
 	public void navigate() {
+		System.out.print(world.support.baseUrl + URL);
 		world.driver.get(world.support.baseUrl + URL);
 	}
 
